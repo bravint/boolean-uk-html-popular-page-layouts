@@ -10,40 +10,73 @@
     187px       1fr         300px            56px;
 }
 
-  .item1 {
+  .gmail1 {
     padding: 10px;
     grid-area: header;
     background-color: #ffffcc;
   }
-  .item2 {
+  .gmail2 {
     padding: 10px;
     grid-area: menu;
     background-color: #5500ff50;
   }
-  .item3 {
+  .gmail3 {
     padding: 10px;
     grid-area: main;
     background-color: #50ff2250;
   }
-  .item4 {
+  .gmail4 {
     padding: 10px;
     grid-area: settings;
     background-color: #ff005550;
   }
-  .item5 {
+  .gmail5 {
     grid-area: shortcuts;
     background-color: #99b3ff;
   }
   
-  .linkedin{
+.linkedin{
 
     height: 100vh;
-    width: 720px;
+    width: 1024px;
     
     display: grid;
     text-align: center;
     grid-template:
     "header     header      header"        48px
     "profile    main        news"          1fr /
-    187px       1fr         300px;
+    200px       1fr         200px;
   }
+
+  .linkedin1 {
+    padding: 10px;
+    grid-area: header;
+    background-color: #ffffcc;
+  }
+  .linkedin2 {
+    padding: 10px;
+    grid-area: profile;
+    background-color: #5500ff50;
+  }
+  .linkedin3 {
+    padding: 10px;
+    grid-area: main;
+    background-color: #50ff2250;
+  }
+  .linkedin4 {
+    padding: 10px;
+    grid-area: news;
+    background-color: #ff005550;
+  }
+
+.discord{
+
+  height: 100vh;
+  
+  display: grid;
+  text-align: center;
+  grid-template:
+  "nav     header      header"        48px
+  "nav    main        news"          1fr /
+  200px       1fr         200px;
+}
