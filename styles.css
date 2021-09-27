@@ -1,19 +1,15 @@
 * {
   text-align: center;
+  height: 100vh;
 }
 
-
 .gmail {
-
-    height: 100vh;
-    
     display: grid;
     grid-template:
     "header     header      header      header"     48px
     "menu       main        settings    shortcuts"  1fr /
-    187px       1fr         300px            56px;
+    187px       1fr         300px       56px;
 }
-
   .gmail1 {
     padding: 10px;
     grid-area: header;
@@ -38,10 +34,21 @@
     grid-area: shortcuts;
     background-color: #99b3ff;
   }
+
+  @media screen and (max-width: 780px) {
+    .gmail {
+      grid-template:
+      "header     header      header"      48px
+      "menu       main        settings"    1fr /
+      187px       1fr         300px;
+    }
+
+    .gmail5 {
+      display: none;
+    }
+  }
   
 .linkedin{
-
-    height: 100vh;
     max-width: 1024px;
     margin: auto;
     display: grid;
@@ -51,7 +58,6 @@
     "profile    main        news"          1fr /
     200px       1fr         200px;
   }
-
   .linkedin1 {
     padding: 10px;
     grid-area: header;
@@ -74,16 +80,12 @@
   }
 
 .discord{
-
-  height: 100vh;
-  
   display: grid;
   grid-template:
-  "nav     header     header"      50px
-  "nav     channel     main"        1fr /
-  50px     200px        1fr;
+  "nav     header     header    header"      48px
+  "nav     channel    main      active"      1fr /
+  72px     240px      1fr       358px;
 }
-
 .discord1 {
   padding: 10px;
   grid-area: nav;
@@ -103,4 +105,23 @@
   padding: 10px;
   grid-area: main;
   background-color: #ff005550;
+}
+.discord5 {
+  padding: 10px;
+  grid-area: active;
+  background-color: #99b3ff;
+}
+
+@media screen and (max-width: 1200px) {
+  .discord{
+    display: grid;
+    grid-template:
+    "nav     header     header"    48px
+    "nav     channel    main"      1fr /
+    72px     240px      1fr       
+  }
+
+  .discord5 {
+    display: none;
+  }
 }
