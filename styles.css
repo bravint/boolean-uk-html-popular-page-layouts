@@ -1,0 +1,49 @@
+.gmail {
+
+    height: 100vh;
+    
+    display: grid;
+    text-align: center;
+    grid-template:
+    "header     header      header      header"     48px
+    "menu       main        settings    shortcuts"  1fr /
+    187px       1fr         300px            56px;
+}
+
+  .item1 {
+    padding: 10px;
+    grid-area: header;
+    background-color: #ffffcc;
+  }
+  .item2 {
+    padding: 10px;
+    grid-area: menu;
+    background-color: #5500ff50;
+  }
+  .item3 {
+    padding: 10px;
+    grid-area: main;
+    background-color: #50ff2250;
+  }
+  .item4 {
+    padding: 10px;
+    grid-area: settings;
+    background-color: #ff005550;
+  }
+  .item5 {
+    grid-area: shortcuts;
+    background-color: #99b3ff;
+  }
+  
+  .linkedin{
+
+    height: 100vh;
+    width: 720px;
+    
+    display: grid;
+    text-align: center;
+    grid-template:
+    "header     header      header"        48px
+    "profile    main        news"          1fr /
+    187px       1fr         300px;
+  }
