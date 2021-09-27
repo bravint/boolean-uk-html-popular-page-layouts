@@ -1,9 +1,13 @@
+* {
+  text-align: center;
+}
+
+
 .gmail {
 
     height: 100vh;
     
     display: grid;
-    text-align: center;
     grid-template:
     "header     header      header      header"     48px
     "menu       main        settings    shortcuts"  1fr /
@@ -74,9 +78,29 @@
   height: 100vh;
   
   display: grid;
-  text-align: center;
   grid-template:
-  "nav     header      header"        48px
-  "nav    main        news"          1fr /
-  200px       1fr         200px;
+  "nav     header     header"      50px
+  "nav     channel     main"        1fr /
+  50px     200px        1fr;
+}
+
+.discord1 {
+  padding: 10px;
+  grid-area: nav;
+  background-color: #ffffcc;
+}
+.discord2 {
+  padding: 10px;
+  grid-area: header;
+  background-color: #5500ff50;
+}
+.discord3 {
+  padding: 10px;
+  grid-area: channel;
+  background-color: #50ff2250;
+}
+.discord4 {
+  padding: 10px;
+  grid-area: main;
+  background-color: #ff005550;
 }
