@@ -3,6 +3,8 @@
   height: 100vh;
 }
 
+/* gmail (responsive) */
+
 .gmail {
     display: grid;
     grid-template:
@@ -35,6 +37,8 @@
     background-color: #99b3ff;
   }
 
+  /* responsive */
+
   @media screen and (max-width: 780px) {
     .gmail {
       grid-template:
@@ -48,6 +52,8 @@
     }
   }
   
+/* linkedin (NOT responsive)*/
+
 .linkedin{
     max-width: 1024px;
     margin: auto;
@@ -78,6 +84,8 @@
     grid-area: news;
     background-color: #ff005550;
   }
+
+/* discord (responsive)*/
 
 .discord{
   display: grid;
@@ -111,6 +119,8 @@
   grid-area: active;
   background-color: #99b3ff;
 }
+
+/* responsive */
 
 @media screen and (max-width: 1200px) {
   .discord{
